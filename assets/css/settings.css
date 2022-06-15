@@ -1,0 +1,443 @@
+@font-face {
+    font-family: 'droid';
+    src: url('./assets/fonts/DroidSerif-Bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'droid';
+    src: url('./assets/fonts/DroidSerif-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --primary-font: 'Roboto', sans-serif;
+
+    --secondary-font: 'droid', sans-serif;
+
+    --primary-color: 00,00,00; /* black */
+
+    --secondary-color: 153,153,153; /* grey */
+
+    --brand-color: 17,158,230; /* light blue */
+
+    --bg-color: 242,242,242; /* light grey */
+}
+
+html {
+    font-size: 100%;
+}
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgb(var(--primary-color));
+    background-color: #fff;
+}
+
+ul , li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
+}
+
+/* make images easier to work */
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'droid';
+    font-weight: 700;
+    color: rgb(var(--primary-color));
+}
+
+.h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.h2 {
+    line-height: 1.2;
+    font-size: 26px;
+}
+
+.h3 {
+    line-height: 1.3;
+    font-size: 24px;
+}
+
+.h4 {
+    line-height: 1.3;
+
+}
+
+.h5 {
+    font-size: 20px;
+}
+
+.h6 {
+    font-size: 16px;
+}
+
+.p {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1199px) {
+
+    h1 {
+
+        line-height: 1.1;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 22px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    .h1 {
+        font-size: 55px;
+    }
+
+    .h2 {
+        font-size: 40px;
+    }
+
+    .h3 {
+        font-size: 29.75px;
+    }
+
+    .h4 {
+        font-size: 26.40px;
+    }
+
+    .h5 {
+        font-size: 24px;
+    }
+
+    .h6 {
+        font-size: 22px;
+    }
+
+    .p {
+        font-size: 16px;
+    }
+
+}
+
+a {
+    transition: .3s;
+    color: rgb(var(--secondary-color));
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    color: rgb(var(--brand-color));
+}
+
+@media (min-width: 1320px) {
+
+    .container {
+        max-width: 1400px;
+    }
+}
+
+
+/*Color */
+.bg-brand {
+    background: rgb(var(--brand-color)) !important;
+}
+
+.bg-primary {
+    background: rgb(var(--primary-color)) !important;
+}
+
+.bg-secondary {
+    background: rgb(var(--secondary-color)) !important;
+}
+
+.bg-gray {
+    background-color: #F9F9F0 !important;
+}
+
+.bg-white,
+.bg-light {
+    background: #fff !important;
+}
+
+.bg-dark {
+    background: #000 !important;
+}
+
+.text-gray a:not(.btn),
+.text-gray {
+    color: #54565A !important;
+}
+
+.text-light a:not(.btn),
+.text-light {
+    color: #ffffff !important;
+}
+
+.text-dark a:not(.btn),
+.text-dark {
+    color: #333333 !important;
+}
+
+a.text-primary:hover,
+a.text-primary:focus,
+.text-primary {
+    color: rgb(var(--primary-color)) !important;
+}
+
+a.text-brand:hover,
+a.text-brand:focus,
+.text-brand {
+    color: rgb(var(--brand-color)) !important;
+}
+
+a.text-secondary:hover,
+a.text-secondary:focus,
+.text-secondary {
+    color: rgb(var(--secondary-color)) !important;
+}
+
+
+/* Typography */
+
+.font-300 {
+    font-weight: 300 !important;
+}
+.font-500 {
+    font-weight: 500 !important;
+}
+
+.font-600 {
+    font-weight: 600 !important;
+}
+
+.font-700 {
+    font-weight: 700 !important;
+}
+
+.font-800 {
+    font-weight: 800 !important;
+}
+
+.font-900 {
+    font-weight: 900 !important;
+}
+
+
+
+/*Buttons*/
+
+.btn {
+    font-family: rgb(var(--secondary-font));
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    position: relative;
+    padding: 16px 35px;
+    border-radius: 5px;
+    min-width: 190px;
+    color: rgb(var(--brand-color));
+    background: transparent;
+    border: 2px solid rgb(var(--brand-color));
+    transition: .5s;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.btn:focus,
+.btn:active,
+.btn:hover {
+    color: #fff;
+    background: rgb(var(--brand-color));
+}
+
+.btn-lg {
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+.btn-sm {
+    font-size: 14.7px;
+    padding: 13px 20px;
+    min-width: 160px;
+}
+
+.btn-block {
+    width: 100%;
+    display: block;
+}
+
+
+
+.btn-primary {
+    background: rgb(var(--primary-color)) !important;
+    color: #ffffff !important;
+}
+
+.btn-secondary {
+    background: transparent !important;
+    color: rgb(var(--brand-color)) !important;
+    border: 1px solid rgb(var(--brand-color));
+    padding: 10px 20px;
+}
+
+
+
+/* .btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+    background: rgb(var(--primary-color)) !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+} */
+
+.btn-brand {
+    border: 2px solid rgb(var(--brand-color)) !important;
+    background: rgb(var(--brand-color)) !important; 
+    color: #ffffff!important;
+}
+
+.btn-brand:hover {
+    border: 2px solid rgb(var(--brand-color)) !important;
+    background: rgb(var(--brand-color)) !important;
+    color: #ffffff!important;
+}
+
+
+
+@media screen and (max-width:600px) {
+
+    .btn {
+        font-size: 18px;
+    }
+
+}
+
+/* Reusable Classes*/
+
+.omr-sec {
+	position: relative;
+    padding: 25px 0;
+}
+
+@media screen and (min-width:991px) {
+    .omr-sec {
+        padding: 60px 0;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .omr-sec {
+        padding: 90px 0;
+    }
+}
+
+.has-image-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.has-overlay {
+    position: relative;
+}
+
+.has-overlay:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg,  #fff, #f7ddd3);
+}
+
+.omr-heading {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.omr-heading .omr-title {
+    line-height: 1;
+    margin: 0;
+}
+
+.omr-heading .omr-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    opacity: .7;
+}
+
+@media screen and (min-width: 1199px) {
+
+  
+
+}
