@@ -113,8 +113,26 @@
     color: rgb(var(--brand-color));
 }
 
+/* //End Navbar */
 
-/* // Navbar */
+/* Hero Section */
+.omr-hero {
+    padding: 130px 0;
+}
+
+.omr-hero-img img {
+    min-width: 100%;
+}
+
+.omr-hero-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* Hero Section */
+
 
 
 /* Footer
